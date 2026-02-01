@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Iron Lady – Task Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Iron Lady – Internal Task Management System</h1>
+
+<div class="container">
+    <input type="text" id="taskName" placeholder="Task / Lead Name">
+    <input type="text" id="assignedTo" placeholder="Assigned To">
+
+    <select id="status">
+        <option value="New">New</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Completed">Completed</option>
+    </select>
+
+    <button onclick="addTask()">Add Task</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Task</th>
+                <th>Assigned To</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="taskTable"></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
